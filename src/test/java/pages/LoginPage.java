@@ -2,13 +2,12 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
-public class LoginPage extends  BasePage{
-    By userId = By.id(app_package_name+ "user_id");
-    By password = By.id(app_package_name+ "user_password");
-    By showPassword = By.id(app_package_name+ "checkbox_show_password");
-    By login_Button = By.id(app_package_name+ "btn_login");
+public class LoginPage extends BasePage {
+    By userId = By.id(app_package_name + "user_id");
+    By password = By.id(app_package_name + "user_password");
+    By showPassword = By.id(app_package_name + "checkbox_show_password");
+    By login_Button = By.id(app_package_name + "btn_login");
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -20,7 +19,6 @@ public class LoginPage extends  BasePage{
         driver.findElement(password).sendKeys("testvagrant123");
         driver.findElement(showPassword).click();
         driver.findElement(login_Button).click();
-        Assert.a
         return new LoginPage(driver);
     }
 }

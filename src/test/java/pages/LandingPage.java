@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LandingPage extends BasePage{
+public class LandingPage extends BasePage {
 
     By flipkart_logo_locator = By.id(app_package_name + "flipkart_logo");
 

@@ -24,7 +24,7 @@ public class AppiumTest {
     public void setUp() throws Exception {
 
         // set up appium
-        File appDir = new File("/Users/nishant/Development/SampleApk");
+        File appDir = new File("/Users/nishant/Development/SampleApps");
         File app = new File(appDir, "Flipkart.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
