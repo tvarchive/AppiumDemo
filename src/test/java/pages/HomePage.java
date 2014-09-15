@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -22,6 +23,7 @@ public class HomePage extends BasePage {
         driver.findElement(search_button_locator).click();
         driver.findElement(search_button_locator).click();
         waitForVisibilityOf(search_textbox_locator);
+
         clearText(driver.findElement(search_textbox_locator));
         driver.findElement(search_textbox_locator).sendKeys(keyword);
 
@@ -29,6 +31,7 @@ public class HomePage extends BasePage {
 
     void clearText(WebElement elementToBeCleared){
         elementToBeCleared.sendKeys("x");
-        elementToBeCleared.clear();
+        elementToBeCleared.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+        elementToBeCleared.sendKeys(Keys.chord(Keys.BACK_SPACE));
     }
 }

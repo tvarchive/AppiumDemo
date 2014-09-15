@@ -1,17 +1,14 @@
 package scenarios;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.LandingPage;
+import pages.LoginPage;
 
 import java.io.File;
 import java.net.URL;
@@ -27,7 +24,7 @@ public class AppiumTest {
     public void setUp() throws Exception {
 
         // set up appium
-        File appDir = new File("/Users/nishant/Development/");
+        File appDir = new File("/Users/nishant/Development/SampleApk");
         File app = new File(appDir, "Flipkart.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
@@ -55,18 +52,7 @@ public class AppiumTest {
     @Test
     public void falseLoginTest() throws InterruptedException
     {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-
-
-
-        WebElement emailId = driver.findElement(By.id("com.flipkart.android:id/user_id"));
-        wait.until(ExpectedConditions.visibilityOf(emailId));
-
-        emailId.sendKeys("someone@testvagrant.com");
-        driver.findElement(By.id("com.flipkart.android:id/user_password")).sendKeys("somePassword");
-
-        driver.findElement(By.id("com.flipkart.android:id/checkbox_show_password")).click();
-        driver.findElement(By.id("com.flipkart.android:id/btn_login")).click();
+        new LoginPage(driver).invalidLogin();
     }
 
     @Test
