@@ -13,12 +13,7 @@ import pages.LoginPage;
 import java.io.File;
 import java.net.URL;
 
-/**
- * Created by nishant on 12/09/14.
- */
-public class AppiumTest {
-
-    private WebDriver driver;
+public class AppiumTest extends BaseScenario {
 
     @BeforeMethod
     public void setUp() throws Exception {
