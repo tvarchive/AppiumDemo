@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage extends BasePage {
     By userId = By.id(app_package_name + "user_id");
     By password = By.id(app_package_name + "user_password");
-    By showPassword = By.id(app_package_name + "checkbox_show_password");
+    By showPassword = By.id(app_package_name + "show_password");
     By login_Button = By.id(app_package_name + "btn_login");
 
     public LoginPage(WebDriver driver) {
