@@ -4,9 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-/**
- * Created by nishant on 24/09/14.
- */
+
 public class ProductPage extends BasePage{
 
 

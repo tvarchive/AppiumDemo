@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Nishants-MacBook-Pro.local" name="scenarios.AppiumTest" tests="5" failures="1" timestamp="28 Oct 2014 12:41:41 GMT" time="131.047" errors="0">
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="scenarios.IOSTest">
+    <failure type="org.openqa.selenium.SessionNotCreatedException" message="A new session could not be created. (Original error: Bad app: /Users/nishant/Development/AppiumDemo/apps/UICatalog6.1.app.zip. App paths need to be absolute, or relative to the appium server install dir, or a URL to compressed file, or a special app name. cause: Error: ENOENT, stat &amp;apos;/Users/nishant/Development/AppiumDemo/apps/UICatalog6.1.app.zip&amp;apos;) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &amp;apos;2.43.0&amp;apos;, revision: &amp;apos;accb3003b9fb8f7cae30f9669b4c594a065396a6&amp;apos;, time: &amp;apos;2014-09-09 22:22:51&amp;apos;
+System info: host: &amp;apos;Nishants-MacBook-Pro.local&amp;apos;, ip: &amp;apos;192.168.1.8&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;10.10&amp;apos;, java.version: &amp;apos;1.6.0_65&amp;apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver">
+      <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Bad app: /Users/nishant/Development/AppiumDemo/apps/UICatalog6.1.app.zip. App paths need to be absolute, or relative to the appium server install dir, or a URL to compressed file, or a special app name. cause: Error: ENOENT, stat '/Users/nishant/Development/AppiumDemo/apps/UICatalog6.1.app.zip') (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: '2.43.0', revision: 'accb3003b9fb8f7cae30f9669b4c594a065396a6', time: '2014-09-09 22:22:51'
+System info: host: 'Nishants-MacBook-Pro.local', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10', java.version: '1.6.0_65'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at scenarios.IOSTest.setUp(IOSTest.java:36)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 32 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="scenarios.IOSTest">
+    <skipped/>
+  </testcase>
+  <testcase name="falseLoginTest" time="15.427" classname="scenarios.AppiumTest"/>
+  <testcase name="testProductSearch" time="20.996" classname="scenarios.AppiumTest"/>
+  <testcase name="testScrollUponHomePageAndTapAction" time="6.555" classname="scenarios.AppiumTest">
+    <failure type="org.openqa.selenium.NoSuchElementException" message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 286 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.43.0&amp;apos;, revision: &amp;apos;accb3003b9fb8f7cae30f9669b4c594a065396a6&amp;apos;, time: &amp;apos;2014-09-09 22:22:51&amp;apos;
+System info: host: &amp;apos;Nishants-MacBook-Pro.local&amp;apos;, ip: &amp;apos;192.168.1.8&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;10.10&amp;apos;, java.version: &amp;apos;1.6.0_65&amp;apos;
+Session ID: 7954892a-4a69-4b5b-bb4b-63534f395e37
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=LINUX, app=/Users/nishant/Development/AppiumDemo/apps/Flipkart.3.0.apk, javascriptEnabled=true, browserName=Android, networkConnectionEnabled=true, desired={app=/Users/nishant/Development/AppiumDemo/apps/Flipkart.3.0.apk, deviceName=Android, platformName=Android, device=Android}, locationContextEnabled=false, platformVersion=4.1, databaseEnabled=false, platformName=Android, deviceName=Android, webStorageEnabled=false, device=Android, warnings={}, takesScreenshot=true}]">
+      <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 286 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.0', revision: 'accb3003b9fb8f7cae30f9669b4c594a065396a6', time: '2014-09-09 22:22:51'
+System info: host: 'Nishants-MacBook-Pro.local', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10', java.version: '1.6.0_65'
+Session ID: 7954892a-4a69-4b5b-bb4b-63534f395e37
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=LINUX, app=/Users/nishant/Development/AppiumDemo/apps/Flipkart.3.0.apk, javascriptEnabled=true, browserName=Android, networkConnectionEnabled=true, desired={app=/Users/nishant/Development/AppiumDemo/apps/Flipkart.3.0.apk, deviceName=Android, platformName=Android, device=Android}, locationContextEnabled=false, platformVersion=4.1, databaseEnabled=false, platformName=Android, deviceName=Android, webStorageEnabled=false, device=Android, warnings={}, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.LandingPage.skipLogInScreen(LandingPage.java:33)
+	at pages.LandingPage.scrollPageUpAndClickOnRefrigerator(LandingPage.java:40)
+	at scenarios.AppiumTest.testScrollUponHomePageAndTapAction(AppiumTest.java:55)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testSwipeOnHomePage" time="17.416" classname="scenarios.AppiumTest"/>
+  <testcase name="testSearchWorkflow" time="0.0" classname="scenarios.IOSTest">
+    <skipped/>
+  </testcase>
+</testsuite>

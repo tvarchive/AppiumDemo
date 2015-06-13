@@ -1,0 +1,9 @@
+pages/HomePage.class
+pages/BasePage.class
+pages/ResultPage.class
+pages/LoginPage.class
+pages/LandingPage.class
+pages/ProductPage.class
+scenarios/BaseScenario.class
+scenarios/AppiumTest.class
+scenarios/IOSTest.class

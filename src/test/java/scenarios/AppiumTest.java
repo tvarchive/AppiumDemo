@@ -6,11 +6,11 @@ import org.testng.annotations.Test;
 import pages.LandingPage;
 import pages.LoginPage;
 
-public class AppiumTest extends BaseScenario {
+public class AppiumTest extends AndroidSetup {
 
     @BeforeMethod
     public void setUp() throws Exception {
-        setUpAppium();
+        prepareAndroidForAppium();
     }
 
     @AfterMethod
@@ -32,7 +32,6 @@ public class AppiumTest extends BaseScenario {
     }
 
 
-    // Commenting this test as the test fails due to the Appium SendKeys Bug
     @Test
     public void testAddToCart(){
         new LandingPage(driver).chooseToBrowseItems()
@@ -40,9 +39,7 @@ public class AppiumTest extends BaseScenario {
                 .selectFirstResultFor("iphone")
                 .addToCart("iphone")
                 .verifyCartShowsTheCount();
-
     }
-
 
     @Test
     public void testSwipeOnHomePage()  {

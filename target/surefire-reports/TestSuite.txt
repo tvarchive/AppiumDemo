@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 132.045 sec <<< FAILURE!
+testScrollUponHomePageAndTapAction(scenarios.AppiumTest)  Time elapsed: 6.63 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 286 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.0', revision: 'accb3003b9fb8f7cae30f9669b4c594a065396a6', time: '2014-09-09 22:22:51'
+System info: host: 'Nishants-MacBook-Pro.local', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10', java.version: '1.6.0_65'
+Session ID: 7954892a-4a69-4b5b-bb4b-63534f395e37
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=LINUX, app=/Users/nishant/Development/AppiumDemo/apps/Flipkart.3.0.apk, javascriptEnabled=true, browserName=Android, networkConnectionEnabled=true, desired={app=/Users/nishant/Development/AppiumDemo/apps/Flipkart.3.0.apk, deviceName=Android, platformName=Android, device=Android}, locationContextEnabled=false, platformVersion=4.1, databaseEnabled=false, platformName=Android, deviceName=Android, webStorageEnabled=false, device=Android, warnings={}, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.LandingPage.skipLogInScreen(LandingPage.java:33)
+	at pages.LandingPage.scrollPageUpAndClickOnRefrigerator(LandingPage.java:40)
+	at scenarios.AppiumTest.testScrollUponHomePageAndTapAction(AppiumTest.java:55)
+
+setUp(scenarios.IOSTest)  Time elapsed: 18.394 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Bad app: /Users/nishant/Development/AppiumDemo/apps/UICatalog6.1.app.zip. App paths need to be absolute, or relative to the appium server install dir, or a URL to compressed file, or a special app name. cause: Error: ENOENT, stat '/Users/nishant/Development/AppiumDemo/apps/UICatalog6.1.app.zip') (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: '2.43.0', revision: 'accb3003b9fb8f7cae30f9669b4c594a065396a6', time: '2014-09-09 22:22:51'
+System info: host: 'Nishants-MacBook-Pro.local', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10', java.version: '1.6.0_65'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at scenarios.IOSTest.setUp(IOSTest.java:36)
+

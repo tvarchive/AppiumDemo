@@ -25,6 +25,8 @@
         <module name="AppiumExample" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AppiumExample" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-

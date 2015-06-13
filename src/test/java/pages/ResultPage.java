@@ -6,9 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-/**
- * Created by nishant on 23/09/14.
- */
+
 public class ResultPage extends HomePage {
 
     By searchResultHeader = By.id(app_package_name + "product_list_query_text");

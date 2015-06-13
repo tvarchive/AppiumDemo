@@ -5,9 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-/**
- * Created by nishant on 13/09/14.
- */
+
 public class HomePage extends BasePage {
 
     By search_button_locator = By.id(app_package_name + "menu_search");
