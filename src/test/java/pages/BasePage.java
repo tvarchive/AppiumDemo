@@ -17,7 +17,6 @@ public class BasePage {
 
 
     protected WebDriver driver;
-    String app_package_name = "com.flipkart.android:id/";
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
