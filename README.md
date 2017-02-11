@@ -24,4 +24,4 @@ This java project has been created using **IntelliJ IDea 13 Community Edition**.
 - **Rebuild**
 - **Run the test**
 
-For any help write us on *nishant@testvagrant.com*, *sukesh@testvagrant.com*
+For any help write us on *krarjun90@gmail.com*, *sukesh@testvagrant.com*
