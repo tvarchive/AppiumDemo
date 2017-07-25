@@ -1,22 +1,22 @@
 ## Note: We have built Optimus to help you start doing funtional automation from the first day itself. It's the most advanced framework which even let you do the inter-app testing very easily and it's absolutely free.  
-####Visit www.testvagrant.com/optimus
+## Visit www.testvagrant.com/optimus
 
 AppiumDemo
 ==========
-##Testing Mobile App using Appium
+## Testing Mobile App using Appium
 
-##Objective
+## Objective
 
 Intent of this project is to illustrate how **Appium** can be used to test mobile application **Android** and parallelise the test with multiple android devices connected.
 
-##This project illustrate below concepts:
+## This project illustrate below concepts:
 
-###Android App Tests
+## Android App Tests
 This would precisely explain how to get started with Android App testing, write the first test and then the test suite management.
 
 This java project has been created using **IntelliJ IDea 13 Community Edition**. POM File manages the dependency of **Selenium (version 2.43.0)**. Project is using **TestNG annotation**. We have also bundled the respective mobile applications under the apps folder for ease.
 
-##Steps:
+## Steps:
 
 - **Appium Set up** - Before running the project you need to download and install Appium. Once this this done, do the android SDK set up as mentioned below.
 
@@ -28,4 +28,4 @@ This java project has been created using **IntelliJ IDea 13 Community Edition**.
 - **Run the test**
 
 
-##For any help write us on *optimus@testvagrant.com*
+## For any help write us on *optimus@testvagrant.com*
